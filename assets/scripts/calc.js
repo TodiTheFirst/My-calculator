@@ -1,14 +1,15 @@
 const base = 0;
 let outPutRes = base;
-function usGetInput () {
+console.log();
+const usGetInput = () => {
     return parseInt(userInput.value);
 };
 
-const ADD = () => {
-   const firstIn = outPutRes;
-   const inPt = usGetInput();
-   firstIn += inPt ;
-   outputResult(`Sum is ${firstIn}`,`${firstIn} + ${inpD}`)
+const add = () => {
+let inPt = usGetInput();
+let firstIn = outPutRes;
+firstIn += inPt ;
+   outputResult(`Sum is ${firstIn}`,`${firstIn} + ${inPt}`)
 };
 
 const SUB = () => {
@@ -23,6 +24,6 @@ const MUL = () => {
 };
 
 
-addBtn.addEventListener('click', ADD);
+addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click',SUB)
 multiplyBtn.addEventListener('click', MUL)
